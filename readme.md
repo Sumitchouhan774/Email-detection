@@ -18,38 +18,7 @@ This project provides a trained machine learning model that can predict whether 
 
 1. Make sure you have the `spam_classifier.pkl` model file in your working directory.
 
-2. Here's a simple example of how to use the model:
-```python
-import joblib
-
-# Load the trained model
-model = joblib.load('spam_classifier.pkl')
-
-# Prepare your email messages
-emails = [
-    'Your message here',
-    'Another message to test'
-]
-
-# Get predictions
-predictions = model.predict(emails)
-
-# Interpret results
-# 0 = Ham (legitimate email)
-# 1 = Spam
-print(predictions)
-```
-
-### Example
-
-```python
-emails = [
-    'Hey friend, can we get together to watch football game tomorrow?',
-    'Upto 20% discount on parking, exclusive offer just for you. Dont miss this reward!'
-] # you can add as many as you need to test or check
-predictions = model.predict(emails)
-# Output: [0, 1] (First message is ham, second is spam)
-```
+2. Here's a simple example of how to use the model [Example.py](example.py)
 
 ## Model Information
 
